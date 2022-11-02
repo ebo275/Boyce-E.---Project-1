@@ -1,6 +1,6 @@
 body {
 
-    background-image: url("/Users/ellaboyce/Project1/Boyce-E.---Project-1/projects/North Coast copy.jpeg");
+    background-image: url("/Users/ellaboyce/Desktop/Boyce-E.---Project-1/projects/North Coast copy.jpeg");
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -9,51 +9,130 @@ body {
 
 }
 h1 {
+    display: flex;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: normal;
-    font-size: 56px;
-    margin: auto
+    
 }
 
 .Name {
+    display: flex;
+    flex-direction: column;
     padding-bottom: 5px;
-    padding-left: 155px;
-    padding-top: 45px;
+    padding-left: 145px;
+    /* padding-right: 155; */
+    padding-top: 1em;
+    margin: auto;
+    justify-content: space-between;
+    /* align-items: center; */
+    font-size: 3em;
     /* width: fit-content; */
     /* background-color: white; */
 }
 h3 {
+    display: flex;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: normal;
-    font-size: 28px;
+    margin-top: -1em;
 }
 ul {
-    display: inline;
+    /* display: inline; */
     list-style-type: none;
-    margin: 0;
-    width: 60px;
+    /* margin: 0;
+    width: 60px; */
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: normal;
-    font-size: 28px;
+    /* font-size: 28px; */
     text-align: right;
 }
-  
+
 li a {
-    display: inline;
+    /* display: inline; */
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: normal;
-    font-size: 28px;
+    /* font-size: 4vh; */
     text-align: right;
 
 }
 
-nav {
+/* nav {
     position: relative;
     top: -180px;
     left: -100px;
-}
-header {
-    background-color: whitesmoke;
-    height: 200px;
+
+} */
+.header-flex {
+    display: flex;
+    /* flex-wrap: wrap; */
+    background-color: #e1dad7;
+    opacity: 80%;
+    height: fit-content;
     width: 100%;
+    margin: 0%;
+}
+.flex-container {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 20%;
+    margin: auto;
+    font-size: 2em;
+    padding-right: 1em;
+    padding-top: 1em;
+}
+
+#modal {
+    display: none;
+    justify-content: center;
+    align-items: stretch;
+    background-color: #e1dad7;
+    opacity: 85%;
+    position: fixed;
+    margin-top: 50vh;
+    margin-left: 40vh;
+    margin-right: 60vh;
+    /* top: 0; */
+    /* left: 0; */
+    height: 30vh;
+    width: 12em;
+    z-index: 1;
+    /*This puts our modal in front of the body (which has a default z-index setting of `0`*/
+    overflow: auto;
+    /*If overflow is clipped, a scroll-bar should be added to see the rest of the content*/
+    border-radius: 2px;
+	/* box-shadow: 1vh 2vh 2vh rgba(0, 0, 0, 0.2); */
+}
+#modal-textbox {
+    display: none;
+    color: black;
+    flex-direction: column;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: .35em;
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    margin: auto;
+    background-color: #e1dad7;
+    height: fit-content;
+    }
+h2 {
+    align-content: center;
+    margin-right: -.3em;
+}
+#options {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+#option1 {
+    display: none;
+}
+#option2 {
+    display: none;
 }
