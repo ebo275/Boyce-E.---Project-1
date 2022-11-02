@@ -1,0 +1,59 @@
+body {
+
+    background-image: url("/Users/ellaboyce/Project1/Boyce-E.---Project-1/projects/North Coast copy.jpeg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+
+
+}
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-size: 56px;
+    margin: auto
+}
+
+.Name {
+    padding-bottom: 5px;
+    padding-left: 155px;
+    padding-top: 45px;
+    /* width: fit-content; */
+    /* background-color: white; */
+}
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-size: 28px;
+}
+ul {
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+    width: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-size: 28px;
+    text-align: right;
+}
+  
+li a {
+    display: inline;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-size: 28px;
+    text-align: right;
+
+}
+
+nav {
+    position: relative;
+    top: -180px;
+    left: -100px;
+}
+header {
+    background-color: whitesmoke;
+    height: 200px;
+    width: 100%;
+}
