@@ -136,3 +136,65 @@ h2 {
 #option2 {
     display: none;
 }
+
+#bio {
+    display: none;
+    flex-direction: column;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 1em;
+    background-color: #e1dad7;
+    opacity: 85%;
+    height: fit-content;
+    width: fit-content;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: left;
+    margin-right: -1em;
+    margin-top: 1em;
+
+}
+
+
+
+
+/* @media (max-width: 500px) {
+    #modal { */
+        /* display: none;
+        justify-content: center;
+        align-items: stretch;
+        background-color: #e1dad7;
+        opacity: 85%;
+        position:fixed;
+        margin-top: 50vh;
+        margin-left: 10em;
+        margin-right: 10em;
+        height: 30vh;
+        width: 12em;
+        z-index: 1;
+        overflow: auto; */
+        /* bottom: 0;
+        top: 0;
+        margin: auto;
+        max-height: 1500px;
+        max-width: 200px;
+        position: fixed;
+        right: 0;
+        left: 0; */
+    /* }
+    #modal-textbox {
+    display: none;
+    color: black;
+    flex-direction: column;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: .35em;
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    margin: auto;
+    background-color: #e1dad7;
+    height: fit-content;
+    }
+    } */
