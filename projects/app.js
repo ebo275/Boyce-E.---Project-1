@@ -19,12 +19,12 @@ $( () => {
     }
 
     const sockSock = () => {
-        $option1.css('display', 'inline')    
+        $option1.toggle();    
 
     }
-    
+
     const sockShoe = () => {
-        $option2.css('display', 'inline')    
+        $option2.toggle();    
     }
     
 
