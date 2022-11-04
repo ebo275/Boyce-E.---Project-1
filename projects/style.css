@@ -12,8 +12,10 @@ h1 {
     display: flex;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: normal;
+    font-size: 5em;
     
 }
+
 
 .Name {
     display: flex;
@@ -25,7 +27,7 @@ h1 {
     margin: auto;
     justify-content: space-between;
     /* align-items: center; */
-    font-size: 3em;
+    /* font-size: 3em; */
     /* width: fit-content; */
     /* background-color: white; */
 }
@@ -34,6 +36,7 @@ h3 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: normal;
     margin-top: -1em;
+    font-size: 3.5em;
 }
 ul {
     /* display: inline; */
@@ -61,7 +64,7 @@ li a {
     left: -100px;
 
 } */
-.header-flex {
+header {
     display: flex;
     /* flex-wrap: wrap; */
     background-color: #e1dad7;
@@ -155,6 +158,49 @@ h2 {
 
 }
 
+#experience {
+    display: none;
+    flex-direction: column;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 1em;
+    background-color: #e1dad7;
+    opacity: 85%;
+    height: fit-content;
+    width: 75%;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: left;
+    margin-left: 20em;
+    margin-top: 10em; 
+    list-style: none;
+    margin-right: 20em;
+}
+#experience h1 {
+    font-size: 3em;
+    align-items: center;
+}
+.workTitle {
+    text-align: center;
+    font-size: 1.75em;
+
+}
+#projects {
+    display: none;
+    flex-direction: column;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 1em;
+    background-color: #e1dad7;
+    opacity: 85%;
+    height: fit-content;
+    width: 50%;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
+    margin-left: 20em;
+    margin-top: 1em; 
+}
 
 
 
