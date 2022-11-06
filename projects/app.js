@@ -1,5 +1,8 @@
 $( () => {
+
+
 //---------------------VARIABLES---------------------//
+    
     const $openBtn = $('h1');
     const $modal = $('#modal');
     const $closeBtn = $('#close')
@@ -14,7 +17,12 @@ $( () => {
     const $projectsButton = $('#projects-button')
     const $projects = $('#projects')
 
+
+
+
 //---------------------FUNCTIONS---------------------//
+
+
 
 //---------------------MODAL---------------------//
 
@@ -43,6 +51,10 @@ $( () => {
     const bioHide = () => {
         $bio.css('display', 'none');
     }
+    // const bioToggle = () => {
+    //     $bio.toggle(bioSlide)
+    // }
+    
 //-----------------EXPERIENCE---------------------//
 
 const experienceSlide = () => {
@@ -74,5 +86,18 @@ const projectsHide = () => {
     $experienceButton.mouseout(experienceHide)
     $projectsButton.mouseover(projectsSlide)
     $projectsButton.mouseout(projectsHide)
+    // $bioButton.on('click', bioToggle)
+
+
+    // $bioButton.on('click', bioSlide)
+    // $bioButton.on('click', bioHide)
+    // $experienceButton.on('click', experienceSlide)
+    // $experienceButton.on('click', experienceHide)
+    // $projectsButton.on('click', projectsSlide)
+    // $projectsButton.on('click', projectsHide)
+
+    // $bioButton.addEventListener('click', bioSlide)
+    // $bioButton.addEventListener('mouseover', bioSlide)
+    // $bioButton.addEventListener('mouseout', bioHide)
 
 })

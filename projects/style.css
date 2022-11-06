@@ -1,3 +1,9 @@
+html, body {
+    width: 100%;
+    top: 0;
+    bottom: 0;
+}
+
 body {
 
     background-image: url("/Users/ellaboyce/Desktop/Boyce-E.---Project-1/projects/North Coast copy.jpeg");
@@ -21,7 +27,7 @@ h1 {
     display: flex;
     flex-direction: column;
     padding-bottom: 5px;
-    padding-left: 145px;
+    padding-left: .5em;
     /* padding-right: 155; */
     padding-top: 1em;
     margin: auto;
@@ -49,7 +55,7 @@ ul {
     text-align: right;
 }
 
-li a {
+li {
     /* display: inline; */
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: normal;
@@ -72,16 +78,21 @@ header {
     height: fit-content;
     width: 100%;
     margin: 0%;
+    /* padding: 20px 50px; */
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    align-items: stretch;
 }
 .flex-container {
 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 20%;
-    margin: auto;
+    /* width: 20%; */
+    /* margin: auto; */
     font-size: 2em;
-    padding-right: 1em;
+    padding-right: 1.5em;
     padding-top: 1em;
 }
 
@@ -92,13 +103,13 @@ header {
     background-color: #e1dad7;
     opacity: 85%;
     position: fixed;
-    margin-top: 50vh;
-    margin-left: 40vh;
-    margin-right: 60vh;
+    margin-top: 40vh;
+    margin-left: 60vh;
+    margin-right: 40vh;
     /* top: 0; */
     /* left: 0; */
-    height: 30vh;
-    width: 12em;
+    height: fit-content;
+    width: 40%;
     z-index: 1;
     /*This puts our modal in front of the body (which has a default z-index setting of `0`*/
     overflow: auto;
@@ -112,7 +123,7 @@ header {
     flex-direction: column;
     align-items: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: .35em;
+    font-size: 1em;
     font-weight: normal;
     display: flex;
     justify-content: center;
@@ -145,7 +156,7 @@ h2 {
     flex-direction: column;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: black;
-    font-size: 1em;
+    font-size: 2em;
     background-color: #e1dad7;
     opacity: 85%;
     height: fit-content;
@@ -154,13 +165,17 @@ h2 {
     /* align-items: center; */
     text-align: left;
     margin-right: -1em;
-    margin-top: 1em;
+    margin-top: 10em;
+    margin-bottom: 10em;
+    padding-top: 4em;
+    padding-bottom: 4em;
 
 }
 
 #experience {
     display: none;
     flex-direction: column;
+    /* position: fixed; */
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: black;
     font-size: 1em;
@@ -171,18 +186,28 @@ h2 {
     justify-content: center;
     /* align-items: center; */
     text-align: left;
-    margin-left: 20em;
+    margin-left: 10em;
     margin-top: 10em; 
-    list-style: none;
+    margin-bottom: 10em;
+    /* list-style: none; */
     margin-right: 20em;
 }
 #experience h1 {
     font-size: 3em;
+    text-align: center;
     align-items: center;
+    font-weight: bold;
+}
+#experience li {
+    font-size: 1.5em;
+    padding-left: 2em;
+    text-align: left;
+
 }
 .workTitle {
     text-align: center;
     font-size: 1.75em;
+    font-weight: bold;
 
 }
 #projects {
@@ -190,7 +215,7 @@ h2 {
     flex-direction: column;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: black;
-    font-size: 1em;
+    font-size: 2em;
     background-color: #e1dad7;
     opacity: 85%;
     height: fit-content;
@@ -198,10 +223,43 @@ h2 {
     justify-content: center;
     /* align-items: center; */
     text-align: center;
-    margin-left: 20em;
-    margin-top: 1em; 
+    margin-left: 14em;
+    margin-top: 10em; 
+    margin-bottom: 10em;
+    padding-top: 4em;
+    margin-right: 20em;
+    padding-bottom: 4em;
+
 }
 
+@media screen and (max-width: 450px) {
+    #bio {
+        width: fit-content;
+        height:fit-content;
+        margin-top: 10vh;
+    }
+    header {
+        width: 100%;
+        height:fit-content;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    .Name {
+        padding-left: -100px;
+    }
+    #experience {
+        margin-top: 20vh;
+        margin-left: -20em;
+        width: fit-content;
+        height: fit-content;
+    }
+    #projects {
+        width: fit-content;
+        height: fit-content;
+        margin-top: -60vh;
+    }
+}
 
 
 /* @media (max-width: 500px) {
