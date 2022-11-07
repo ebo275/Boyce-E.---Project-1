@@ -19,6 +19,7 @@ h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: normal;
     font-size: 5em;
+    /* position: fixed; */
     
 }
 
@@ -36,6 +37,7 @@ h1 {
     /* font-size: 3em; */
     /* width: fit-content; */
     /* background-color: white; */
+    /* position: fixed; */
 }
 h3 {
     display: flex;
@@ -43,6 +45,7 @@ h3 {
     font-weight: normal;
     margin-top: -1em;
     font-size: 3.5em;
+    /* position: fixed; */
 }
 ul {
     /* display: inline; */
@@ -102,8 +105,9 @@ header {
     align-items: stretch;
     background-color: #e1dad7;
     opacity: 85%;
-    position: fixed;
-    margin-top: 40vh;
+    position: scroll;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
     margin-left: 60vh;
     margin-right: 40vh;
     /* top: 0; */
@@ -131,7 +135,44 @@ header {
     margin: auto;
     background-color: #e1dad7;
     height: fit-content;
+    padding-top: 5em;
+    padding-bottom: 5em;
     }
+#close {
+    font-size: 1.5em;
+    padding: .25em;
+    border: solid;
+    margin-top: -2em;
+    
+}
+#sockSock {
+    font-size: 1.5em;
+    padding: .25em;
+    border: solid;
+    margin-right: .15em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: none;
+
+
+}
+#sockShoe {
+    font-size: 1.5em;
+    padding: .25em;
+    border: solid;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: none;
+
+}
+#option1 {
+    font-size: 1.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+#option2 {
+    font-size: 1.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
 h2 {
     align-content: center;
     margin-right: -.3em;
@@ -146,9 +187,12 @@ h2 {
 }
 #option1 {
     display: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 #option2 {
     display: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
 
 #bio {
@@ -169,6 +213,8 @@ h2 {
     margin-bottom: 10em;
     padding-top: 4em;
     padding-bottom: 4em;
+    position: scroll;
+
 
 }
 
@@ -191,6 +237,8 @@ h2 {
     margin-bottom: 10em;
     /* list-style: none; */
     margin-right: 20em;
+    position: scroll;
+
 }
 #experience h1 {
     font-size: 3em;
@@ -229,6 +277,28 @@ h2 {
     padding-top: 4em;
     margin-right: 20em;
     padding-bottom: 4em;
+    position: scroll;
+
+
+}
+#contacts {
+    display: none;
+    flex-direction: row;
+    opacity: 85%;
+    justify-items: space-between;
+}
+.icon-img > img {
+    width: 1.15em;
+    height: 1em;
+    margin: .25em;
+}
+#contact-modal {
+    display: none;
+    font-size: .5em;
+    font-weight: bold;
+    color:black;
+    background-color: #e1dad7;
+    opacity: 85%;
 
 }
 

@@ -16,6 +16,11 @@ $( () => {
     const $experience = $('#experience')
     const $projectsButton = $('#projects-button')
     const $projects = $('#projects')
+    const $contactsButton = $('#contact-button')
+    const $contacts = $('#contacts')
+    const $mailButton = $('#mail-icon')
+    const $mailModal = $('#contact-modal')
+
 
 
 
@@ -73,7 +78,22 @@ const projectsHide = () => {
     $projects.css('display', 'none');
 }
     
-    
+//-------------------CONTACTS------------------------//
+const contactsSlide = () => {
+    $contacts.css('display', 'flex');
+}
+const contactsHide = () => {
+    $contacts.css('display', 'none');
+}
+
+//-----------------------EMAIL MODAL-----------------------//
+
+const mailSlide = () => {
+    $mailModal.css('display', 'block');
+}
+const mailHide = () => {
+    $mailModal.css('display', 'none');
+}
 //---------------EVENT LISTENERS/INVOCATIONS-----------------//
 
     $openBtn.on('click', openModal)
@@ -81,13 +101,23 @@ const projectsHide = () => {
     $sockSock.on('click', sockSock)
     $sockShoe.on('click', sockShoe)
     $bioButton.mouseover(bioSlide)
-    $bioButton.mouseout(bioHide)
+    $('body').on('click', bioHide)
     $experienceButton.mouseover(experienceSlide)
-    $experienceButton.mouseout(experienceHide)
+    $('body').on('click', experienceHide)
     $projectsButton.mouseover(projectsSlide)
-    $projectsButton.mouseout(projectsHide)
-    // $bioButton.on('click', bioToggle)
+    $('body').on('click', projectsHide)
+    $contactsButton.mouseover(contactsSlide)
+    $('body').on('click',contactsHide)
+    $mailButton.mouseover(mailSlide)
+    $mailButton.mouseout(mailHide)
+    // $('body').on('click',mailHide)
 
+    // $bioButton.on('click', bioToggle)
+    //make a variable for the body so that it says if you click anywhere else besides this 
+    //button iy eill close 
+    // the toggle fuction takes 3 arguments: duration, xxxx, function to call once the job is completee
+        //toggle and display will actually show and hide it 
+    
 
     // $bioButton.on('click', bioSlide)
     // $bioButton.on('click', bioHide)
